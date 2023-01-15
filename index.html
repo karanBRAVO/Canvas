@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 3</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="Navbar">
+            <nav>
+                <div class="heading">
+                    <p>Drawing Board</p>
+                </div>
+                <div class="content" id="showContent">
+                    <p>Color Palette</p>
+                    <p id="showArrow">></p>
+                </div>
+                <ul id="ul">
+                    <li id="Violet">Violet</li>
+                    <li id="Indigo">Indigo</li>
+                    <li id="Blue">Blue</li>
+                    <li id="Green">Green</li>
+                    <li id="Yellow">Yellow</li>
+                    <li id="Orange">Orange</li>
+                    <li id="Red">Red</li>
+                    <li id="cPicker">
+                        <label for="colorPicker">Use Color Picker</label>
+                        <input type="color" name="color" id="colorPicker">
+                    </li>
+                </ul>
+                <div class="sizeCont" id="sizeContainer">
+                    <div class="content" id="showPixelResizer">
+                        <p>Pixel Size</p>
+                        <p id="showResizeArrow">></p>
+                    </div>
+                    <div class="resizebox" id="resizeBox">
+                        <div style="cursor: pointer;" id="decreaseSize" class="hvr">-</div>
+                        <div id="sizeCounter">2</div>
+                        <div style="cursor: pointer;" id="increaseSize" class="hvr">+</div>
+                    </div>
+                </div>
+                <div class="toolBox" id="toolBoxCont">
+                    <div class="content" id="showToolBox">
+                        <p>Tool Box</p>
+                        <p id="showToolBoxArrow">></p>
+                    </div>
+                    <div class="btnBox" id="toolBox">
+                        <button title="remove all" id="rmvAllBtn"><img src="" alt="R"></button>
+                        <button title="save canvas" id="saveBtn"><img src="" alt="S"></button>
+                        <button title="eraser" id="eraser"><img src="" alt="E"></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="bName">
+                    <div>
+                        <p>Karan, Inc(2023 - &infin;)</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="canvasCont">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
