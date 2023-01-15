@@ -176,11 +176,14 @@ eraser.addEventListener('click', () => {
 })
 
 saveBtn.addEventListener('click', (e) => {
-    const link = document.createElement('a');
-    link.download = 'canvasDraw.png';
-    link.href = canvas.toDataURL();
-    link.click();
-    link.delete;
+    let val = confirm("Do you want to save canvas?");
+    if (val) {
+        const link = document.createElement('a');
+        link.download = 'canvasDraw.png';
+        link.href = canvas.toDataURL();
+        link.click();
+        link.delete;
+    }
 })
 
 canvas.addEventListener('mousemove', (event) => {
